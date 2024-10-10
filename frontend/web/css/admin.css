@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Background hitam */
+    color: #f1f1f1; /* Warna teks terang */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Container for the landing page */
+.admin-info {
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #1c1c1c; /* Warna abu-abu gelap */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Shadow lebih tajam */
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: all 0.4s ease;
+}
+
+.admin-info:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); /* Shadow lebih dramatis saat hover */
+    transform: translateY(-10px);
+}
+
+/* Section Titles */
+.admin-info h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff; /* Warna putih untuk judul */
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1.2s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.admin-info h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Warna putih untuk subjudul */
+    border-bottom: 3px solid #ffffff; /* Border putih */
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    animation: slideInLeft 1s ease;
+    text-transform: uppercase;
+}
+
+/* Text Styling */
+.admin-info p, .admin-info ul {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #f1f1f1; /* Warna teks putih */
+    margin-bottom: 30px;
+    animation: fadeInUp 1.3s ease;
+}
+
+.admin-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.admin-info ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    color: #00d9ff; /* Warna biru cerah */
+}
+
+.admin-info ul li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff; /* Warna bintang putih */
+    font-size: 1.3rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effects */
+.admin-info h2:hover {
+    color: #e74c3c; /* Efek hover merah lebih terang */
+    border-color: #e74c3c;
+    transition: 0.4s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .admin-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .admin-info h2 {
+        font-size: 2rem;
+    }
+
+    .admin-info p, .admin-info ul li {
+        font-size: 1rem;
+    }
+}
